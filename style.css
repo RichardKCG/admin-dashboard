@@ -1,4 +1,6 @@
 body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -9,9 +11,128 @@ body {
 
 .header {
     grid-column: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin: 10px 60px 20px 60px;
+}
+
+.search, .user {
+    margin-bottom: 30px;
+}
+
+.search {
+    grid-column: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.magnify, 
+.bell {
+    width: 25px;
+    height: 25px;
+}
+
+.magnify:hover,
+.bell:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.field {
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    background-color: #e5e7eb;
+    width: 600px;
+    height: 28px;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+
+.user {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-self: right;
+    gap: 30px;
+    font-size: 12px;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .dashboard {
     grid-column: 1;
+    grid-row: 1 / 5; /* to be adjusted */
+    background-color: #38bdf8;
 }
 
+.content {
+    grid-column: 2;
+    background-color: #94a3b8;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome-pic {
+    width: 60px;
+}
+
+.message {
+    font-size: 16px;
+}
+
+.message > p, h3 {
+    margin: 0;
+}
+
+.nav > ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    gap: 50px;
+}
+
+.nav li {
+    color: white;
+    font-weight: 700;
+    background-color: #38bdf8;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.nav li:hover {
+    background-color: #0ea5e9;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.dashboard {
+    display: grid;
+    grid-column: 1fr 2fr;
+}
+
+.dash-top {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+}

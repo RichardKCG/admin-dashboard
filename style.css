@@ -212,7 +212,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     column-gap: 1px;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 20px;
 }
 
@@ -220,7 +220,7 @@ body {
     background-color: white;
     border-left: 8px solid;
     border-color: #0ea5e9;
-    width: 450px; /* Temporary */
+    width: 450px;
     height: 200px;
     border-radius: 10px;
     padding: 10px;
@@ -243,7 +243,7 @@ body {
 }
 
 .project-icons * {
-    width: 8%;
+    width: 6%;
     margin: 5px;
 }
 
@@ -251,4 +251,71 @@ body {
     fill: #475569;
 }
 
+.side {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
 
+.side h3 {
+    margin-top: 10px;
+}
+
+.announcement {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 12px;
+    height: 360px;
+    width: 300px;
+}
+
+.announcement div {
+    width: 200px;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+
+.announcement .information {
+    font-size: 11px;
+    color: #475569;
+}
+
+.announcement .heading {
+    font-weight: 300px;
+}
+
+.trending {
+    justify-content: flex-end;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 260px;
+    width: 300px;
+    border-radius: 12px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.trending-pic {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.trending-user {
+    display: flex;
+    padding: 0 50px 0 50px;
+    gap: 10px;
+}
+
+.trending-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 5px;
+}
+
+.project-name {
+    font-size: 12px;
+}
